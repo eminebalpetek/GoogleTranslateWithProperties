@@ -10,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				plugin= {"html:target/cucumber-reports","json:target/cucumber.json"},
 				features="./src/test/resources/features",
-				glue="stepdefinitions")
+				glue="stepdefinitions",
+				tags="@smoke")
 				
 public class CukesRunner {
 	
